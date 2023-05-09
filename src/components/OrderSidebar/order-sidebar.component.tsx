@@ -8,13 +8,11 @@ import Hamburguer4 from "../../assets/img/4.png";
 export default function OrderSidebar() {
     return <div className="w-3/12 bg-white p-8 flex flex-col">
     <SubtitleSection firstWord="Subtotal do " secondWord="Pedido" />
-    <div className="flex flex-col flex-grow">
-      <div className="mt-8 flex flex-col">
+    <div className="flex flex-col mt-8 flex-grow">
         <ItemSubtotal title="Hambúrguer Triplo" price="R$ 29,90" img={Hamburguer} total={1} priceTotal="R$ 29,90" />
         <ItemSubtotal title="Hambúrguer Cheese" price="R$ 19,40" img={Hamburguer2} total={2} priceTotal="R$ 38,80" />
         <ItemSubtotal title="Hambúrguer Triplo 2" price="R$ 34,50" img={Hamburguer3} total={1} priceTotal="R$ 34,50" />
         <ItemSubtotal title="Hambúrguer Frango" price="R$ 29,90" img={Hamburguer4} total={1} priceTotal="R$ 29,90" />
-      </div>
       <div className="flex flex-row justify-between mt-8">
         <span className="text-xs font-bold">Sub Total</span>
         <span className="text-xs font-bold">R$ 133,10</span>

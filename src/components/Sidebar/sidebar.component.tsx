@@ -8,17 +8,18 @@ import Sair from "../../assets/icons/sair.png";
 import ItemSidebar from "./parts/item-sidebar.part";
 
 export default function Sidebar() {
-    return <div className="w-1/12 bg-white p-6">
+    return <div className="w-1/12 bg-white p-6 flex flex-col">
         <Logo />
-        <div className="flex flex-col justify-center items-center pt-6">
+        <div className="flex flex-col flex-grow justify-start mt-4 items-center pt-6">
             <ItemSidebar icon={Home} label="Home" active={true} />
             <ItemSidebar icon={Vendas} label="Vendas" active={false} />
             <ItemSidebar icon={Mensagens} label="Mensagens" active={false} />
             <ItemSidebar icon={Pedidos} label="Pedidos" active={false} />
             <ItemSidebar icon={Configuracoes} label="Configurações" active={false} />
         </div>
-        <div className="flex grow mt-16">
-            <div className="w-20 py-2 flex flex-col justify-center items-center mb-4">
+        <div className="flex flex-col mt-auto">
+            {/* Preciso que */}
+            <div className="w-20 py-2 flex flex-col justify-center items-center justify-end">
                 <img src={Sair} className="w-6 h-6" />
                 <span className="text-xs text-gray-400 mt-1">Sair</span>
             </div>
